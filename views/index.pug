@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", href="/css/all.css", type='text/css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap")
+    title= title
+  body
+    - var values = todolist
+    .todo-list__container
+      header.todo-list__header
+        h3 Hello!
+        p 您有
+          span#listNum= num
+          | 項待辦事項
+      .todo-list__input
+        input(type="text"
+          id="content"
+          name="content"
+          value="")
+        input(type="submit"
+          id="sendBtn"
+          value="增加")
+      ul#list
+        each val, idx in todolist
+          li
+            span= val.content
+            img(data-id=idx
+              src="/img/remove.png")
+    script(src="/js/all.js")
