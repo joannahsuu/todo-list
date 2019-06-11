@@ -1,7 +1,8 @@
 ## todolist
 
-- 後端設計：RESTful API
-- 前端設計：SPA(Single Page Application)
+- express + Firebase 設計 RESTful API 
+
+- 部署至heroku 
 
 ---
 
