@@ -5,7 +5,7 @@ let list = document.getElementById('list')
 
 sendBtn.addEventListener('click', function(e) {
   let str = content.value
-  console.log('str', str)
+  // console.log('str', str)
   // ajax
   let xhr = new XMLHttpRequest()
   xhr.open('post', '/addTodo')
@@ -14,7 +14,7 @@ sendBtn.addEventListener('click', function(e) {
   xhr.send(todo)
   xhr.onload = function() {
     let data = JSON.parse(xhr.responseText)
-    console.log('data', data)
+    // console.log('data', data)
     if(!data.success) {
       alert(data.msg)
       return
@@ -50,7 +50,7 @@ list.addEventListener('click', function(e) {
   xhr.send(removeTodo)
   xhr.onload = function() {
     let data = JSON.parse(xhr.responseText)
-    console.log('data', data)
+    // console.log('data', data)
     if(!data.success) {
       alert(data.msg)
       return
