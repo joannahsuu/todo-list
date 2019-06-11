@@ -7,3 +7,4 @@
 /yarn-error.log*
 /yarn.lock
 /testproject-a9962-firebase-adminsdk-jlp61-7c73e17dc7.json
+/.env

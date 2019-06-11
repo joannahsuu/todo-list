@@ -1,19 +1,19 @@
 {
-  "name": "express-test",
+  "name": "todo-list",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "engines": {
-    "node": "6.11.1"
+    "node": ">= 6.0.0"
   },
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
     "ejs-locals": "^1.0.2",
     "express": "^4.16.2",
     "firebase-admin": "^8.0.0",
