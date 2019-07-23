@@ -6,6 +6,10 @@ let list = document.getElementById('list')
 sendBtn.addEventListener('click', function(e) {
   let str = content.value
   // console.log('str', str)
+  if (str.trim() === '') {
+    alert('輸入內容不得為空')
+    return
+  }
   // ajax
   let xhr = new XMLHttpRequest()
   xhr.open('post', '/addTodo')
